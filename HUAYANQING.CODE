@@ -1,0 +1,221 @@
+// 담당 지역 코드 / 负责地区代码
+// 원본 파일 / 原始文件: lib/models/city_data.dart
+// 사용 방법 / 使用方法: 이 코드를 city_data.dart에 넣고 cities 목록에 등록합니다. / 将本代码放入 city_data.dart，并在 cities 列表中注册。
+
+import 'package:flutter/material.dart';
+
+import 'travel_models.dart';
+
+const hangzhouCity = CityTravelData(
+  id: 'hangzhou',
+  province: '저장성 / 浙江省',
+  city: '항저우시 / 杭州市',
+  displayName: '저장성 항저우시 / 浙江省杭州市',
+  shortName: '항저우 / 杭州',
+  moduleTag: '강남 여행 모듈 / 江南旅行模块',
+  moduleSubtitle: '서호, 차 문화, 운하, 항방 요리, 3일 코스 / 西湖、茶文化、运河、杭帮菜与 3 天游线',
+  heroTitle: '항저우 Hangzhou / 杭州',
+  heroSubtitle:
+      '서호의 물빛, 룽징 차밭, 강남 도시의 우아함을 함께 느낍니다. / 西湖水色、龙井茶园与江南城市气质，构成杭州印象。',
+  heroImages: [
+    'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80',
+  ],
+  introLines: [
+    IntroLine(
+      label: '지리 위치 / 地理位置',
+      text: '저장성 북부, 첸탕강 하류와 서호 주변에 자리합니다. / 位于浙江省北部，钱塘江下游与西湖周边。',
+    ),
+    IntroLine(
+      label: '도시 소개 / 城市简介',
+      text:
+          '역사 문화, 디지털 산업, 자연 경관이 함께 발전한 강남 중심 도시입니다. / 是历史文化、数字产业和自然景观共同发展的江南城市。',
+    ),
+    IntroLine(
+      label: '기후 특징 / 气候特点',
+      text: '아열대 계절풍 기후로 봄과 가을이 여행하기 좋고 장마철은 습합니다. / 属亚热带季风气候，春秋宜游，梅雨季较潮湿。',
+    ),
+    IntroLine(
+      label: '도시 특색 / 城市特色',
+      text: '서호, 룽징차, 대운하, 항방 요리와 송운 문화가 대표적입니다. / 西湖、龙井茶、大运河、杭帮菜与宋韵文化是特色。',
+    ),
+  ],
+  attractions: [
+    Attraction(
+      name: '서호 / 西湖',
+      imageUrl:
+          'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80',
+      summary: '호수, 산, 정자, 다리가 어우러진 항저우의 대표 경관입니다. / 湖、山、亭、桥相互映衬，是杭州最具代表性的景观。',
+      highlights: ['소제 산책 / 苏堤漫步', '단교 풍경 / 断桥风景', '유람선 / 游船体验'],
+      address: '저장성 항저우시 서호구 / 浙江省杭州市西湖区',
+      openTime: '호수 주변 공공 공간은 대체로 종일 개방됩니다. / 湖区公共空间通常全天开放。',
+    ),
+    Attraction(
+      name: '룽징 차밭 / 龙井茶园',
+      imageUrl:
+          'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+      summary: '차밭 풍경과 룽징차 문화를 함께 경험할 수 있습니다. / 可体验茶园风光与龙井茶文化。',
+      highlights: ['차밭 산책 / 茶园散步', '차 마시기 / 品茶', '봄 풍경 / 春日风景'],
+      address: '저장성 항저우시 서호구 룽징 일대 / 浙江省杭州市西湖区龙井一带',
+      openTime: '찻집마다 시간이 다르므로 현장 확인이 필요합니다. / 茶馆时间不同，建议现场确认。',
+    ),
+    Attraction(
+      name: '허팡제 / 河坊街',
+      imageUrl:
+          'https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1200&q=80',
+      summary:
+          '항저우 전통 상업 거리로 간식과 기념품, 오래된 가게를 볼 수 있습니다. / 杭州传统商业街区，适合吃小吃、买伴手礼和看老字号。',
+      highlights: ['간식 탐방 / 小吃打卡', '오래된 상점 / 老字号', '야간 산책 / 夜间漫步'],
+      address: '저장성 항저우시 상청구 / 浙江省杭州市上城区',
+      openTime: '거리 자체는 자유롭게 둘러볼 수 있고 점포 시간은 다릅니다. / 街区可自由游览，商铺时间各不相同。',
+    ),
+  ],
+  foods: [
+    Food(
+      name: '서호초어 / 西湖醋鱼',
+      imageUrl:
+          'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80',
+      description:
+          '새콤달콤한 소스로 생선의 부드러운 맛을 살린 항저우 대표 요리입니다. / 用酸甜汁突出鱼肉鲜嫩，是杭州代表菜。',
+      taste: '새콤달콤하고 산뜻합니다. / 酸甜清爽。',
+    ),
+    Food(
+      name: '동파육 / 东坡肉',
+      imageUrl:
+          'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80',
+      description: '오래 조린 삼겹살 요리로 항방 요리의 상징입니다. / 慢炖五花肉，是杭帮菜经典。',
+      taste: '부드럽고 진한 간장 향이 납니다. / 软糯酱香。',
+    ),
+    Food(
+      name: '룽징새우 / 龙井虾仁',
+      imageUrl:
+          'https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=1200&q=80',
+      description: '새우와 룽징차 향을 결합한 담백한 요리입니다. / 将虾仁与龙井茶香结合，清淡雅致。',
+      taste: '담백하고 차 향이 은은합니다. / 清鲜淡雅，有茶香。',
+    ),
+  ],
+  itinerary: [
+    ItineraryDay(
+      day: 'Day 1 / 第 1 天',
+      title: '서호 첫 산책 / 西湖初见',
+      highlight: '서호 주변을 천천히 걸으며 도시의 첫인상을 잡습니다. / 慢走西湖周边，建立杭州第一印象。',
+      items: [
+        RouteItem(
+          time: '14:00',
+          place: '호텔 체크인 / 酒店入住',
+          duration: '1시간 / 1小时',
+          note: '서호 또는 지하철 주변 숙소 추천 / 建议住西湖或地铁附近。',
+        ),
+        RouteItem(
+          time: '16:00',
+          place: '서호 산책 / 西湖散步',
+          duration: '2.5시간 / 2.5小时',
+          note: '단교와 소제 방향 추천 / 推荐断桥和苏堤方向。',
+        ),
+        RouteItem(
+          time: '19:00',
+          place: '항방 요리 / 杭帮菜晚餐',
+          duration: '1.5시간 / 1.5小时',
+          note: '동파육과 룽징새우 추천 / 推荐东坡肉和龙井虾仁。',
+        ),
+      ],
+    ),
+    ItineraryDay(
+      day: 'Day 2 / 第 2 天',
+      title: '차 문화와 고거리 / 茶文化与老街',
+      highlight: '룽징 차밭과 허팡제를 연결해 강남 분위기를 느낍니다. / 连接龙井茶园与河坊街，体验江南氛围。',
+      items: [
+        RouteItem(
+          time: '09:00',
+          place: '룽징 차밭 / 龙井茶园',
+          duration: '3시간 / 3小时',
+          note: '차밭 산책과 차 마시기 / 茶园散步与品茶。',
+        ),
+        RouteItem(
+          time: '14:00',
+          place: '허팡제 / 河坊街',
+          duration: '2시간 / 2小时',
+          note: '간식과 기념품 구경 / 小吃与伴手礼。',
+        ),
+        RouteItem(
+          time: '17:00',
+          place: '남송어가 / 南宋御街',
+          duration: '1.5시간 / 1.5小时',
+          note: '역사 거리 산책 / 历史街区漫步。',
+        ),
+      ],
+    ),
+    ItineraryDay(
+      day: 'Day 3 / 第 3 天',
+      title: '운하와 귀가 / 运河与返程',
+      highlight: '대운하 주변에서 조용하게 마무리합니다. / 在大运河周边安静收尾。',
+      items: [
+        RouteItem(
+          time: '09:30',
+          place: '대운하 주변 / 大运河周边',
+          duration: '2시간 / 2小时',
+          note: '물길과 박물관 선택 가능 / 可选择水岸和博物馆。',
+        ),
+        RouteItem(
+          time: '12:00',
+          place: '가벼운 점심 / 简餐午饭',
+          duration: '1시간 / 1小时',
+          note: '면이나 간단한 항저우 음식 / 面食或简单杭帮菜。',
+        ),
+        RouteItem(
+          time: '14:00',
+          place: '귀가 / 返程',
+          duration: '교통편에 따름 / 按交通而定',
+          note: '항저우동역 또는 공항 이동 / 前往杭州东站或机场。',
+        ),
+      ],
+    ),
+  ],
+  quickEntries: [
+    QuickEntry(
+      title: '도시 소개 / 城市介绍',
+      subtitle: '서호와 강남 도시 / 西湖与江南城市',
+      icon: Icons.water_rounded,
+      color: Color(0xFF2E7D5B),
+    ),
+    QuickEntry(
+      title: '대표 명소 / 代表景点',
+      subtitle: '서호, 룽징, 허팡제 / 西湖、龙井、河坊街',
+      icon: Icons.photo_camera_rounded,
+      color: Color(0xFF3F6B91),
+    ),
+    QuickEntry(
+      title: '항방 요리 / 杭帮美食',
+      subtitle: '동파육과 룽징새우 / 东坡肉与龙井虾仁',
+      icon: Icons.restaurant_rounded,
+      color: Color(0xFF9A6A30),
+    ),
+    QuickEntry(
+      title: 'AI 문답 / 智能问答',
+      subtitle: '항저우 여행 조언 / 杭州旅行建议',
+      icon: Icons.auto_awesome_rounded,
+      color: Color(0xFF7A5B99),
+    ),
+  ],
+  aiGreeting:
+      '안녕하세요, 항저우 여행 도우미입니다. “서호”, “차밭”, “먹거리”를 물어보세요. / 你好，我是杭州旅行助手。可以问我“西湖怎么玩”“龙井茶园怎么去”“吃什么”。',
+  aiAnswers: [
+    AiAnswerRule(
+      keywords: ['西湖', '서호'],
+      answer: '서호는 단교, 소제, 유람선을 조합하면 처음 방문자에게 좋습니다. / 西湖可组合断桥、苏堤和游船，适合第一次来杭州。',
+    ),
+    AiAnswerRule(
+      keywords: ['茶', '龙井', '차', '룽징'],
+      answer: '룽징 차밭은 오전에 가면 덜 덥고 사진도 부드럽게 나옵니다. / 龙井茶园建议上午去，天气较舒服，照片也柔和。',
+    ),
+    AiAnswerRule(
+      keywords: ['吃', '美食', '음식', '먹'],
+      answer: '동파육, 서호초어, 룽징새우를 추천합니다. / 推荐东坡肉、西湖醋鱼和龙井虾仁。',
+    ),
+  ],
+  defaultAiAnswer:
+      '항저우는 서호 산책, 차 문화, 고거리, 항방 요리를 묶으면 발표하기 좋습니다. / 杭州适合把西湖漫步、茶文化、老街和杭帮菜组合起来。',
+  icon: Icons.water_rounded,
+);
+
